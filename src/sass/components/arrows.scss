@@ -1,0 +1,41 @@
+.slider-button {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #333;
+  opacity: 0.65;
+  border: none;
+  outline: none;
+  transition: opacity 0.4s ease;
+}
+
+.right-arrow::before,
+.left-arrow::before {
+  content: '';
+  --s: 14px;
+  --bd: 4px solid #fff;
+  width: var(--s);
+  height: var(--s);
+  border-left: var(--bd);
+  border-top: var(--bd);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.right-arrow::before {
+  left: 45%;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.left-arrow::before {
+  left: 55%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.slider-button:hover,
+.slider-button:focus {
+  background-color: #4ec6ab;
+  opacity: 1;
+  cursor: pointer;
+}

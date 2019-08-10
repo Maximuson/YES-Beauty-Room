@@ -1,0 +1,31 @@
+.slider-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+
+  &.tables {
+    height: 900px;
+  }
+}
+
+.slider-scroller {
+  position: absolute;
+  z-index: 1;
+}
+
+.slider-scroller ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-scroller li {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
